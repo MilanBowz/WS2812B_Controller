@@ -1,0 +1,265 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x61218F206E81B20E",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../labo08_12.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2024.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "Colorchooser_0": "",
+      "WS2812B_0": ""
+    },
+    "ports": {
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "120000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "data_out_0": {
+        "direction": "O"
+      },
+      "BTN0_0": {
+        "direction": "I"
+      },
+      "BTN1_0": {
+        "direction": "I"
+      },
+      "BTN2_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "14",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "83.33"
+          },
+          "CLKIN2_JITTER_PS": {
+            "value": "100.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "200.038"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "191.950"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "165.993"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "191.950"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "125.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "25.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.333"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "8"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "SECONDARY_SOURCE": {
+            "value": "Single_ended_clock_capable_pin"
+          },
+          "USE_INCLK_SWITCHOVER": {
+            "value": "false"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "Colorchooser_0": {
+        "vlnv": "xilinx.com:module_ref:Colorchooser:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_Colorchooser_0_0",
+        "xci_path": "ip\\design_1_Colorchooser_0_0\\design_1_Colorchooser_0_0.xci",
+        "inst_hier_path": "Colorchooser_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Colorchooser",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "BTN0": {
+            "direction": "I"
+          },
+          "BTN1": {
+            "direction": "I"
+          },
+          "BTN2": {
+            "direction": "I"
+          },
+          "color": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "WS2812B_0": {
+        "vlnv": "xilinx.com:module_ref:WS2812B:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_WS2812B_0_0",
+        "xci_path": "ip\\design_1_WS2812B_0_0\\design_1_WS2812B_0_0.xci",
+        "inst_hier_path": "WS2812B_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "WS2812B",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "serial": {
+            "direction": "O"
+          },
+          "change_led": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BTN0_0_1": {
+        "ports": [
+          "BTN0_0",
+          "Colorchooser_0/BTN0"
+        ]
+      },
+      "BTN1_0_1": {
+        "ports": [
+          "BTN1_0",
+          "Colorchooser_0/BTN1"
+        ]
+      },
+      "BTN2_0_1": {
+        "ports": [
+          "BTN2_0",
+          "Colorchooser_0/BTN2"
+        ]
+      },
+      "Colorchooser_0_color": {
+        "ports": [
+          "Colorchooser_0/color",
+          "WS2812B_0/change_led"
+        ]
+      },
+      "WS2812B_0_serial": {
+        "ports": [
+          "WS2812B_0/serial",
+          "data_out_0"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "WS2812B_0/clk"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "Colorchooser_0/clk"
+        ]
+      }
+    }
+  }
+}

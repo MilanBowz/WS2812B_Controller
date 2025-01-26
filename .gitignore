@@ -1,0 +1,42 @@
+# Vivado - Vivado Project Files
+*.jou                # Vivado journal files
+*.log                # Vivado log files
+*.wdb                # Vivado debug database
+*.str                # Vivado static timing reports
+*.xrpt               # Vivado report files
+
+# Vivado - Synthesis and Implementation
+*.drc                # Vivado design rule check reports
+*.twx                # Vivado toolchain files
+*.ngc                # Netlist files
+*.ncd                # Xilinx configuration bitstream files
+*.bit                # Bitstream files
+*.bin                # Bitstream binary files
+*.xdc                # Xilinx constraint files (e.g., pin constraints)
+labo08*.runs/  
+
+# Vivado - Simulation Files
+*.vcd                # Value Change Dump (VCD) files
+*.wdb                # Vivado simulation database
+*.unroutes           # Vivado routing issue files
+*.xsim               # Vivado simulation data
+*.sim                # Simulation related files
+/labo08_12.ip_user_files
+
+# Vivado - Miscellaneous
+*.bak                # Backup files
+*.tmp                # Temporary files
+*.swp                # Swap files
+*.recovery           # Vivado recovery files
+
+# Vivado - IP and Generated Files
+ip_cache/            # Vivado IP core cache
+.xgui/               # Vivado GUI related files
+*.cache/
+
+# IDE and Editor files
+.idea/               # JetBrains IDE (e.g., IntelliJ, PyCharm) files
+.vscode/             # VSCode editor settings and workspace files
+
+# User-specific files
+*.user               # Vivado user-specific files
