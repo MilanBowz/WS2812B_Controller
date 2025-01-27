@@ -6,6 +6,9 @@ This project provides an implementation of a driver for WS2812B RGB LEDs, design
 The project is designed for Pynq-Z2 and adheres to the WS2812B timing protocol, ensuring precise bit-level communication with the LEDs. 
 <br> The Colorchooser module allows dynamic control of the first LED using button inputs.
 
+## VHDL-code:
+https://github.com/MilanBowz/WS2812B_Controller/tree/main/labo08_12.srcs/sources_1/new
+
 ## WS2812B Driver:
 
 - Controls up to 16 LEDs in a matrix or ring configuration.
