@@ -18,6 +18,6 @@ The project is designed for Pynq-Z2 and adheres to the WS2812B timing protocol, 
 
 ## Colorchooser Module:
 
-Accepts button inputs (BTN0, BTN1, BTN2) to select colors (Red, Green, Blue).
+Accepts button inputs (BTN0, BTN1, BTN2) to select 1 of these colors (Green, Red, Blue).
 Outputs a 24-bit RGB color value (color).
 Allows real-time color changes by integrating with the WS2812B driver.
