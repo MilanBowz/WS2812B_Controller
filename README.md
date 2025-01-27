@@ -11,7 +11,7 @@ The project is designed for Pynq-Z2 and adheres to the WS2812B timing protocol, 
 - Controls up to 16 LEDs in a matrix or ring configuration.
 - Implements the WS2812B protocol with precise timing:
 - T0H, T0L, T1H, T1L constants are based on a 50 MHz clock.
-- Sends reset signal (50 µs) at the end of a data transmission.
+- Sends reset signal (>50 µs) at the end of a data transmission.
 - Dynamically updates LED colors using the change_led input.
 - Efficient state machine (load_led, load_bit, send_bit, reset) to manage data transmission.
 
