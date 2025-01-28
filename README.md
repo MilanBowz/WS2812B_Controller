@@ -1,7 +1,7 @@
-# WS2812B RGB LED Driver with Colorchooser Module
+# WS2812B GRB LED Driver with Colorchooser Module
 
 Overview
-This project provides an implementation of a driver for WS2812B RGB LEDs, designed for a 16-LED matrix or ring, and includes a Colorchooser module for interactive color selection via buttons.
+This project provides an implementation of a driver for WS2812B GRB LEDs, designed for a 16-LED matrix or ring, and includes a Colorchooser module for interactive color selection via buttons.
 
 The project is designed for Pynq-Z2 and adheres to the WS2812B timing protocol, ensuring precise bit-level communication with the LEDs. 
 <br> The Colorchooser module allows dynamic control of the first LED using button inputs.
