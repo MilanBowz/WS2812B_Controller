@@ -11,7 +11,7 @@ https://github.com/MilanBowz/WS2812B_Controller/tree/main/labo08_12.srcs/sources
 
 ## WS2812B Driver:
 
-- Controls up to 16 LEDs in a matrix or ring configuration.
+- Controls LEDs in a matrix or ring configuration.
 - Implements the WS2812B protocol with precise timing:
 - T0H, T0L, T1H, T1L constants are based on a 50 MHz clock.
 - Sends reset signal (>50 µs) at the end of a data transmission.
